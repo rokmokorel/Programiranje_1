@@ -1,9 +1,9 @@
 odgovor = 42
 
-
 def fibonacci(n):
-    a = b = 0
+    a = b = 1
     for i in range(n):
-        a, b = b, a + b
+        a, b = b, a+b
     return a
-print(fibonacci(42))
+
+print(fibonacci(5))

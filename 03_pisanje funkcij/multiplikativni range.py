@@ -6,3 +6,4 @@ def mrange(zac, fac, dol):
     return sez
 
 print(mrange(7,4,7))
+
