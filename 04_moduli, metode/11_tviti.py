@@ -30,11 +30,7 @@ print(avtor("ana: kdo so te @berta, @cilka, @dani? #krneki"))
 ######################################################################
 
 def vsi_avtorji(tviti):
-    avtorji = []
-    for tvit in tviti:
-        avt = avtor(tvit)
-        avtorji.append(avt)
-    return avtorji
+    return unikati(avtor(tvit) for tvit in tviti)
 
 
 print(vsi_avtorji(tviti))
@@ -106,10 +102,9 @@ print(vsi_hashtagi(tviti))
 ######################################################################
 
 def vse_osebe(tviti):
-    tagani = vse_afne(tviti)
-    avtorji = vsi_avtorji(tviti)
-    osebe = tagani + avtorji
-    return sorted(unikati(osebe))
+    osebe = unikati(vse_afne(tviti) + vsi_avtorji(tviti))
+    osebe.sort()
+    return osebe
 
 
 print(vse_osebe(tviti))
