@@ -58,13 +58,10 @@ def vislice():
         if haveAllChars(beseda, izbrane):
             print('Bravo')
             break
-        if not ugib.lower() or ugib.upper() in beseda:
-            print(beseda)
-            print(type(beseda))
+        if ugib.lower() or ugib.upper() not in beseda:
             zivljenj -= 1
         print('\n')
     if not zivljenj:
         print('Konec igre, iskana beseda je {}'.format(beseda))
-
 
 vislice()
