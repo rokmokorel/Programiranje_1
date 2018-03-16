@@ -44,3 +44,12 @@ zaloga = {"jajca": 10, "mleko": 2, "moka": 2, "marmelada": 2, "kruh": 1}
 
 
 def obrokov(jed, zaloga):
+    koliko = None
+    for sestavina, kolicina in jedi[jed].items():
+        imamo = zaloga.get(sestavina, 0) // kolicina
+        if koliko is None or imamo < koliko:
+            koliko = imamo
+    return koliko
+
+
+print(obrokov('smorn', zaloga))
