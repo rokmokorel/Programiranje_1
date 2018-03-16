@@ -52,4 +52,4 @@ def obrokov(jed, zaloga):
     return koliko
 
 
-print(obrokov('smorn', zaloga))
+print(obrokov('palacinke', zaloga))
