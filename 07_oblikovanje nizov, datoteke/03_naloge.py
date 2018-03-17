@@ -19,4 +19,5 @@ out.write('{:15}{:^15}{:15}'.format('Kraj', 'Vreme', 'Temperatura(˚F)\n'))
 out.write('-' * 45)
 for vrstica in open('podatki.txt', encoding='utf-8'):
     out.write('\n{mesto:.<15}{vreme:.^15}{temp:.>15}'.format(**locals()))
+out.close()
 
