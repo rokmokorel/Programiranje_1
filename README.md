@@ -15,12 +15,4 @@ A rough syllabus:
     classes and objects
     inheritance
     function object
-    miscellaneous topics
-
-Obligations:
-
-    weekly homework assignments
-    two midterm exams (the first will be around the end of November, and the second will be at the end of the semester)
-    the final exam
-
-The midterm exams are worth 25 point each, and the exam is worth 50. To pass, a student has to collect at least 25 points from the exam and at least 50 points in total (from both midterm exams and the final exam).</p>
+    miscellaneous topics</p>
